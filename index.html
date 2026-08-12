@@ -1,0 +1,654 @@
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  /*
+   * Einheitliches Button-Design.
+   * Der Style steht direkt in der Seite und überschreibt
+   * Power-Pages- und Bootstrap-Regeln.
+   */
+  .demo-landing a.demo-button,
+  .demo-landing a.demo-button:link,
+  .demo-landing a.demo-button:visited,
+  .demo-landing button.demo-button,
+  .demo-landing input.demo-button[type="submit"],
+  .demo-landing input.demo-button[type="button"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+    min-width: 210px !important;
+    min-height: 56px !important;
+
+    margin: 0 !important;
+    padding: 16px 26px !important;
+
+    background: #e4002b !important;
+    background-color: #e4002b !important;
+    background-image: none !important;
+
+    border: 2px solid #e4002b !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    color: #ffffff !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1 !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    text-transform: uppercase !important;
+
+    cursor: pointer !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease !important;
+  }
+
+  .demo-landing a.demo-button:hover,
+  .demo-landing a.demo-button:focus,
+  .demo-landing button.demo-button:hover,
+  .demo-landing button.demo-button:focus,
+  .demo-landing input.demo-button[type="submit"]:hover,
+  .demo-landing input.demo-button[type="submit"]:focus {
+    background: #bd0024 !important;
+    background-color: #bd0024 !important;
+    border-color: #bd0024 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .demo-landing a.demo-button:active,
+  .demo-landing button.demo-button:active,
+  .demo-landing input.demo-button[type="submit"]:active {
+    background: #9f001e !important;
+    background-color: #9f001e !important;
+    border-color: #9f001e !important;
+    color: #ffffff !important;
+    transform: translateY(0) !important;
+  }
+
+  /*
+   * Hero-Button zusätzlich absichern.
+   */
+  .demo-landing .demo-hero .demo-hero__button {
+    display: inline-flex !important;
+    min-width: 210px !important;
+    min-height: 56px !important;
+    padding: 16px 26px !important;
+    background: #e4002b !important;
+    border: 2px solid #e4002b !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  /*
+   * Formularbutton über die volle Kartenbreite.
+   */
+  .demo-landing .demo-button--submit {
+    width: 100% !important;
+  }
+
+  @media (max-width: 700px) {
+    .demo-landing a.demo-button,
+    .demo-landing button.demo-button,
+    .demo-landing input.demo-button[type="submit"] {
+      min-width: 180px !important;
+      min-height: 52px !important;
+      padding: 14px 20px !important;
+      font-size: 13px !important;
+    }
+
+    .demo-landing .demo-button--submit {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<div class="demo-landing">
+  <main>
+
+    <!-- Hero -->
+    <section class="demo-hero">
+      <div class="demo-hero__overlay"></div>
+
+      <div class="demo-container demo-hero__content">
+        <div class="demo-hero__copy">
+          <h1>
+            Telematik von MAN<br>
+            3 Monate kostenlos<br>
+            testen.
+          </h1>
+
+          <a
+            class="demo-button demo-hero__button"
+            href="#contact"
+            role="button"
+          >
+            MAN Marketplace
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIO-Erklaerung -->
+    <section class="demo-rio-intro">
+      <div class="demo-container demo-rio-intro__inner">
+        <h2>Was ist RIO?</h2>
+
+        <p>
+          RIO ist die digitale Plattform, über die Transportunternehmen ihre
+          Flotte zentral verwalten und MAN DigitalServices einfach buchen und
+          nutzen können. Statt Fahrzeugdaten, Wartung, Fahrverhalten,
+          Lenkzeiten oder Routenplanung getrennt zu betrachten, bündelt RIO
+          wichtige Informationen an einem Ort.
+        </p>
+
+        <p>
+          MAN DigitalServices sind deshalb besonders wertvoll, weil sie
+          Transparenz in den Fuhrpark bringen: Unternehmen erkennen schneller,
+          wo Kosten entstehen, welche Fahrzeuge verfügbar sind und wo
+          Effizienzpotenziale liegen. So lassen sich Ausfallzeiten reduzieren,
+          Fahrer unterstützen und der Betrieb der gesamten Flotte
+          wirtschaftlicher steuern.
+        </p>
+      </div>
+    </section>
+
+    <!-- Free-Trial-Hinweis -->
+    <section class="demo-trial">
+      <div class="demo-container demo-trial__inner">
+        <p class="demo-eyebrow demo-eyebrow--dark">
+          MAN Free Trial
+        </p>
+
+        <p>
+          MAN DigitalServices können aktuell drei Monate kostenfrei getestet
+          werden: Der Free Trial gilt für Diesel-Fahrzeuge Ihrer Flotte,
+          sofern die jeweiligen Dienste technisch verfügbar sind. Das Angebot
+          richtet sich an neue und bestehende MAN DigitalServices Kunden, die
+          bisher keine kostenpflichtigen MAN-Dienste über die RIO Plattform
+          gebucht haben. Der Testzeitraum endet automatisch und bietet einen
+          einfachen Einstieg in digitale Flottenservices wie Fahrzeuganalyse,
+          Zeitmanagement, Tracking und Wartungsunterstützung.
+        </p>
+      </div>
+    </section>
+
+    <!-- Free-Trial-Produkte -->
+    <section class="demo-products-intro">
+      <div class="demo-container">
+        <p class="demo-eyebrow demo-eyebrow--dark">
+          Enthaltene Dienste
+        </p>
+
+        <h2>Diese MAN DigitalServices können Sie kennenlernen.</h2>
+
+        <p>
+          Die folgenden Dienste unterstützen Transportunternehmen dabei,
+          Fuhrparkdaten besser zu nutzen, rechtliche Pflichten einfacher zu
+          erfüllen und den täglichen Betrieb planbarer zu machen.
+        </p>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-product-feature">
+      <div class="demo-container demo-feature__grid">
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            Daten & Analyse
+          </p>
+
+          <h2>Perform</h2>
+
+          <p>
+            Perform liefert aussagekräftige Fahrzeuganalysen und vergleichbare
+            Fahrerbewertungen. So erkennen Fuhrparkverantwortliche
+            unwirtschaftliche Fahrweisen, Verbrauchstreiber und Potenziale für
+            eine schonendere Fahrzeugnutzung.
+          </p>
+
+          <ul class="demo-check-list">
+            <li>Analyse von Verbrauch, Standzeiten und CO2-Emissionen</li>
+            <li>Vergleichbare Bewertungen von Fahrer- und Fahrzeugeinsatz</li>
+            <li>API-Option zur Integration in bestehende Systeme</li>
+          </ul>
+        </div>
+
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Digitales Analyse-Dashboard"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label">
+            <strong>12%</strong>
+            <span>Effizienzpotenzial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-feature--dark demo-product-feature">
+      <div class="demo-container demo-feature__grid demo-feature__grid--reverse">
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Digitale Dokumenten- und Compliance-Auswertung"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label demo-image-label--light">
+            <strong>24/7</strong>
+            <span>Tacho-Daten</span>
+          </div>
+        </div>
+
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow">
+            Compliance
+          </p>
+
+          <h2>Compliant M</h2>
+
+          <p>
+            Compliant M liest Tachographen- und Fahrerkartendaten automatisch
+            per Fernzugriff aus und speichert sie in der RIO Cloud. Das spart
+            manuellen Aufwand und hilft, gesetzliche Vorgaben verlässlich
+            einzuhalten.
+          </p>
+
+          <ul class="demo-check-list demo-check-list--light">
+            <li>Automatischer Remote-Download von Tacho- und Kartendaten</li>
+            <li>Analyseportal für schnelle Erkennung von Verstößen</li>
+            <li>Optionales Unternehmenskarten-Hosting im Kartenhotel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-product-feature">
+      <div class="demo-container demo-feature__grid">
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            Zeitmanagement
+          </p>
+
+          <h2>Timed</h2>
+
+          <p>
+            Timed zeigt aktuelle Lenk- und Ruhezeiten übersichtlich an. Dadurch
+            können Disposition und Fahrer Zeitfenster besser nutzen,
+            Stresssituationen vermeiden und Verstöße gegen Lenkzeitregeln
+            reduzieren.
+          </p>
+
+          <ul class="demo-check-list">
+            <li>Überblick über Lenk- und Ruhezeiten in Echtzeit</li>
+            <li>Tabellenansichten für Tag, Woche und Doppelwoche</li>
+            <li>Mehr Planbarkeit für Disposition und Tagesgeschäft</li>
+          </ul>
+        </div>
+
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Planung mit Kalender und Zeitfenstern"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label">
+            <strong>Live</strong>
+            <span>Lenkzeiten im Blick</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-feature--dark demo-product-feature">
+      <div class="demo-container demo-feature__grid demo-feature__grid--reverse">
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Digitale Karte mit Routenplanung"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label demo-image-label--light">
+            <strong>25</strong>
+            <span>Fahrthistorie</span>
+          </div>
+        </div>
+
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow">
+            Ortung & Routen
+          </p>
+
+          <h2>Geo</h2>
+
+          <p>
+            Geo macht Fahrzeugpositionen, Fahrthistorie und Routenplanung auf
+            der RIO Karte sichtbar. Mit Points of Interest, Geofences und
+            Position Sharing entsteht mehr Transparenz für Disposition,
+            Kundenservice und Einsatzplanung.
+          </p>
+
+          <ul class="demo-check-list demo-check-list--light">
+            <li>Live-Positionen und Fahrthistorie bis zu 25 Monate</li>
+            <li>POI, Geofences und automatische Ereignisbenachrichtigungen</li>
+            <li>Lkw-Routenplanung inklusive Verkehr und Mautbetrachtung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-product-feature">
+      <div class="demo-container demo-feature__grid">
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            Wartung
+          </p>
+
+          <h2>MAN ServiceCare M</h2>
+
+          <p>
+            MAN ServiceCare M unterstützt ein vorausschauendes Wartungs- und
+            Reparaturmanagement. Fuhrpark und MAN Servicestützpunkt behalten
+            Wartungsstatus, relevante Komponenten und Fahrzeugzustand im Blick,
+            damit Termine frühzeitig koordiniert werden können.
+          </p>
+
+          <ul class="demo-check-list">
+            <li>Detaillierter Überblick über Wartungszustand und Komponenten</li>
+            <li>Informationen zu Bremsbelägen, Füllständen und Reifendruck</li>
+            <li>Mehr Fahrzeugverfügbarkeit durch proaktive Werkstattplanung</li>
+          </ul>
+        </div>
+
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Werkstatt und Fahrzeugwartung"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label">
+            <strong>UP</strong>
+            <span>Verfügbarkeit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-feature--dark demo-product-feature">
+      <div class="demo-container demo-feature__grid demo-feature__grid--reverse">
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Serverraum und digitale Datenintegration"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label demo-image-label--light">
+            <strong>API</strong>
+            <span>OEM-Daten</span>
+          </div>
+        </div>
+
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow">
+            Datenintegration
+          </p>
+
+          <h2>MAN DataPackages</h2>
+
+          <p>
+            MAN DataPackages stellen Fahrzeugdaten flexibel und sicher für
+            bestehende IT- oder Flottenmanagementsysteme bereit. Damit lassen
+            sich MAN OEM-Daten für eigene Analysen, Ladeprozesse oder
+            Wartungslösungen nutzen.
+          </p>
+
+          <ul class="demo-check-list demo-check-list--light">
+            <li>API-basierte Bereitstellung hochwertiger Fahrzeugdaten</li>
+            <li>Daten für Analyse, Wartung, Sicherheit und Umwelt</li>
+            <li>Optionen wie DataPackage S und TiGR-Standardformat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-feature demo-product-feature">
+      <div class="demo-container demo-feature__grid">
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            Kostenmanagement
+          </p>
+
+          <h2>MAN SimplePay</h2>
+
+          <p>
+            MAN SimplePay bündelt Tank- und Ladekarten sowie Transaktionsdaten
+            auf einer zentralen Plattform. Kosten lassen sich fahrzeugbezogen
+            auswerten, Verwaltungsaufwand sinkt und Einsparpotenziale werden
+            schneller sichtbar.
+          </p>
+
+          <ul class="demo-check-list">
+            <li>Transparente Betriebskosten pro Fahrzeug</li>
+            <li>Analyse von Einsparpotenzialen und möglichen Betrugsfällen</li>
+            <li>Kontaktlose Tank- und Parktransaktionen per MAN Driver App</li>
+          </ul>
+        </div>
+
+        <div class="demo-feature__media">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+            alt="Digitale Kosten- und Abrechnungsunterlagen"
+            loading="lazy"
+          >
+
+          <div class="demo-image-label">
+            <strong>€</strong>
+            <span>Kostenkontrolle</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead-Erfassungsformular -->
+    <section id="contact" class="demo-lead">
+      <div class="demo-container demo-lead__grid">
+
+        <div class="demo-lead__intro">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            Persönliche Beratung
+          </p>
+
+          <h2>Bereit für den nächsten Schritt?</h2>
+
+          <p>
+            Aktivieren Sie den Testzeitraum oder lassen Sie prüfen, welche
+            MAN DigitalServices für Ihre Flotte technisch verfügbar sind.
+            So gelingt der Einstieg in digitales Flottenmanagement ohne
+            unnötigen Aufwand.
+          </p>
+
+          <div class="demo-contact-box">
+            <span>MAN DigitalServices Hotline</span>
+            <strong>00800 - 634 448 25</strong>
+            <small>
+              Werktags erreichbar
+            </small>
+          </div>
+        </div>
+
+        <div class="demo-form-card">
+          <form id="demoLeadForm" novalidate>
+
+            <div class="demo-form-row">
+              <div class="demo-field">
+                <label for="demoFirstName">
+                  Vorname *
+                </label>
+
+                <input
+                  id="demoFirstName"
+                  name="firstName"
+                  type="text"
+                  autocomplete="given-name"
+                  required
+                >
+              </div>
+
+              <div class="demo-field">
+                <label for="demoLastName">
+                  Nachname *
+                </label>
+
+                <input
+                  id="demoLastName"
+                  name="lastName"
+                  type="text"
+                  autocomplete="family-name"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="demo-field">
+              <label for="demoCompany">
+                Unternehmen *
+              </label>
+
+              <input
+                id="demoCompany"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                required
+              >
+            </div>
+
+            <div class="demo-form-row">
+              <div class="demo-field">
+                <label for="demoEmail">
+                  Geschäftliche E-Mail *
+                </label>
+
+                <input
+                  id="demoEmail"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <div class="demo-field">
+                <label for="demoFleetSize">
+                  Flottengröße
+                </label>
+
+                <select
+                  id="demoFleetSize"
+                  name="fleetSize"
+                >
+                  <option value="">
+                    Bitte auswählen
+                  </option>
+
+                  <option value="1-10">
+                    1–10 Fahrzeuge
+                  </option>
+
+                  <option value="11-50">
+                    11–50 Fahrzeuge
+                  </option>
+
+                  <option value="51-200">
+                    51–200 Fahrzeuge
+                  </option>
+
+                  <option value="201+">
+                    Mehr als 200 Fahrzeuge
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="demo-field">
+              <label for="demoMessage">
+                Wobei können wir unterstützen?
+              </label>
+
+              <textarea
+                id="demoMessage"
+                name="message"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <label class="demo-checkbox">
+              <input
+                id="demoPrivacy"
+                name="privacy"
+                type="checkbox"
+                required
+              >
+
+              <span>
+                Ich stimme der Verarbeitung meiner Angaben für diese
+                Demo-Anfrage zu. *
+              </span>
+            </label>
+
+            <button
+              class="demo-button demo-button--submit"
+              type="submit"
+            >
+              Demo anfragen
+            </button>
+
+            <p class="demo-form-note">
+              * Pflichtfeld · Reines Demoformular, keine Datenübertragung
+            </p>
+
+            <div
+              id="demoFormMessage"
+              class="demo-form-message"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="demo-footer">
+    <div class="demo-container demo-footer__inner">
+      <span>© 2026 FleetForward Demo</span>
+
+      <div>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+</div>
