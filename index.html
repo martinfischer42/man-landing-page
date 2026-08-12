@@ -2,9 +2,9 @@
 
 <style>
   /*
-   * Einheitliches Button-Design.
-   * Der Style steht direkt in der Seite und überschreibt
-   * Power-Pages- und Bootstrap-Regeln.
+   * Consistent button design.
+   * This style lives directly in the page and overrides
+   * Power Pages and Bootstrap rules.
    */
   .demo-landing a.demo-button,
   .demo-landing a.demo-button:link,
@@ -79,7 +79,7 @@
   }
 
   /*
-   * Hero-Button zusätzlich absichern.
+   * Additional fallback for the hero button.
    */
   .demo-landing .demo-hero .demo-hero__button {
     display: inline-flex !important;
@@ -93,7 +93,7 @@
   }
 
   /*
-   * Formularbutton über die volle Kartenbreite.
+   * Form button spans the full card width.
    */
   .demo-landing .demo-button--submit {
     width: 100% !important;
@@ -141,47 +141,47 @@
       </div>
     </section>
 
-    <!-- RIO-Erklaerung -->
-    <section class="demo-rio-intro">
-      <div class="demo-container demo-rio-intro__inner">
-        <h2>Was ist RIO?</h2>
+    <!-- Angebotsueberblick -->
+    <section class="demo-offer">
+      <div class="demo-container demo-offer__grid">
+        <div class="demo-offer__content">
+          <p class="demo-eyebrow demo-eyebrow--dark">
+            MAN Free Trial
+          </p>
 
-        <p>
-          RIO ist die digitale Plattform, über die Transportunternehmen ihre
-          Flotte zentral verwalten und MAN DigitalServices einfach buchen und
-          nutzen können. Statt Fahrzeugdaten, Wartung, Fahrverhalten,
-          Lenkzeiten oder Routenplanung getrennt zu betrachten, bündelt RIO
-          wichtige Informationen an einem Ort.
-        </p>
+          <h2>Mehr Transparenz für Ihre Flotte. Ohne Startkosten.</h2>
 
-        <p>
-          MAN DigitalServices sind deshalb besonders wertvoll, weil sie
-          Transparenz in den Fuhrpark bringen: Unternehmen erkennen schneller,
-          wo Kosten entstehen, welche Fahrzeuge verfügbar sind und wo
-          Effizienzpotenziale liegen. So lassen sich Ausfallzeiten reduzieren,
-          Fahrer unterstützen und der Betrieb der gesamten Flotte
-          wirtschaftlicher steuern.
-        </p>
-      </div>
-    </section>
+          <p>
+            Testen Sie die Telematik- und Flottendienste von MAN drei Monate
+            kostenlos und erleben Sie, wie Fahrzeugdaten den Alltag im
+            Transportunternehmen vereinfachen: von Verbrauch und Wartung über
+            Lenkzeiten bis hin zu Standort, Compliance und Betriebskosten.
+          </p>
 
-    <!-- Free-Trial-Hinweis -->
-    <section class="demo-trial">
-      <div class="demo-container demo-trial__inner">
-        <p class="demo-eyebrow demo-eyebrow--dark">
-          MAN Free Trial
-        </p>
+          <p>
+            Die Dienste werden über den MAN Marketplace auf der RIO Plattform
+            gebucht und genutzt. RIO ist dabei der digitale Zugangspunkt, über
+            den Sie MAN DigitalServices zentral aktivieren, verwalten und in
+            Ihren Fuhrpark integrieren.
+          </p>
+        </div>
 
-        <p>
-          MAN DigitalServices können aktuell drei Monate kostenfrei getestet
-          werden: Der Free Trial gilt für Diesel-Fahrzeuge Ihrer Flotte,
-          sofern die jeweiligen Dienste technisch verfügbar sind. Das Angebot
-          richtet sich an neue und bestehende MAN DigitalServices Kunden, die
-          bisher keine kostenpflichtigen MAN-Dienste über die RIO Plattform
-          gebucht haben. Der Testzeitraum endet automatisch und bietet einen
-          einfachen Einstieg in digitale Flottenservices wie Fahrzeuganalyse,
-          Zeitmanagement, Tracking und Wartungsunterstützung.
-        </p>
+        <div class="demo-offer__facts" aria-label="Vorteile des Free Trials">
+          <div>
+            <strong>3 Monate</strong>
+            <span>kostenlos testen</span>
+          </div>
+
+          <div>
+            <strong>Diesel-Flotte</strong>
+            <span>bei technischer Verfügbarkeit</span>
+          </div>
+
+          <div>
+            <strong>RIO Plattform</strong>
+            <span>zentral buchen und nutzen</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -571,15 +571,15 @@
                   </option>
 
                   <option value="1-10">
-                    1–10 Fahrzeuge
+                    1-10 Fahrzeuge
                   </option>
 
                   <option value="11-50">
-                    11–50 Fahrzeuge
+                    11-50 Fahrzeuge
                   </option>
 
                   <option value="51-200">
-                    51–200 Fahrzeuge
+                    51-200 Fahrzeuge
                   </option>
 
                   <option value="201+">
