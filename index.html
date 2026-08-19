@@ -141,73 +141,48 @@
       </div>
     </section>
 
-    <!-- Thumbnail-Navigation -->
-    <nav class="demo-section-nav" aria-label="Direkt zu den Bereichen der Seite">
-      <div class="demo-container">
-        <div class="demo-section-nav__heading">
-          <p class="demo-eyebrow demo-eyebrow--dark">Direkt auswählen</p>
-          <h2>Welchen Bereich möchten Sie ansehen?</h2>
-        </div>
-
-        <div class="demo-section-nav__scroller">
-          <a class="demo-section-nav__item" href="#perform">
-            <span class="demo-section-nav__thumb">
-              <img src="images/perform-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>Perform</span>
-          </a>
-
-          <a class="demo-section-nav__item" href="#compliant-m">
-            <span class="demo-section-nav__thumb">
-              <img src="images/compliant-m-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>Compliant M</span>
-          </a>
-
-          <a class="demo-section-nav__item" href="#timed">
-            <span class="demo-section-nav__thumb">
-              <img src="images/timed-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>Timed</span>
-          </a>
-
-          <a class="demo-section-nav__item" href="#geo">
-            <span class="demo-section-nav__thumb">
-              <img src="images/geo-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>Geo</span>
-          </a>
-
-          <a class="demo-section-nav__item" href="#servicecare">
-            <span class="demo-section-nav__thumb">
-              <img src="images/man-servicecare-m-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>ServiceCare M</span>
-          </a>
-
-          <a class="demo-section-nav__item" href="#simplepay">
-            <span class="demo-section-nav__thumb">
-              <img src="images/man-simplepay-header.svg" alt="" aria-hidden="true">
-            </span>
-            <span>SimplePay</span>
-          </a>
-
-          <a class="demo-section-nav__item demo-section-nav__item--text" href="#faq">
-            <span class="demo-section-nav__thumb" aria-hidden="true">
-              <strong>?</strong>
-            </span>
-            <span>Häufige Fragen</span>
-          </a>
-
-          <a class="demo-section-nav__item demo-section-nav__item--text" href="#contact">
-            <span class="demo-section-nav__thumb" aria-hidden="true">
-              <strong>↗</strong>
-            </span>
-            <span>Hilfe &amp; Support</span>
-          </a>
-        </div>
+    <!-- Bereichsnavigation -->
+    <nav class="demo-section-nav" aria-label="Direkt zu den Diensten">
+      <div class="demo-section-nav__scroller">
+        <a class="demo-section-nav__item is-active" href="#perform" aria-current="page">
+          Data &amp; Analysis
+        </a>
+        <a class="demo-section-nav__item" href="#simplepay">
+          Cost Management
+        </a>
+        <a class="demo-section-nav__item" href="#geo">
+          Route &amp; Charging Scheduling
+        </a>
+        <a class="demo-section-nav__item" href="#servicecare">
+          Service &amp; Maintenance Management
+        </a>
+        <a class="demo-section-nav__item" href="#timed">
+          Driver Assistance &amp; Training
+        </a>
       </div>
     </nav>
+
+    <script>
+      (function () {
+        var navigation = document.querySelector(".demo-section-nav");
+
+        if (!navigation) return;
+
+        navigation.addEventListener("click", function (event) {
+          var item = event.target.closest(".demo-section-nav__item");
+
+          if (!item) return;
+
+          navigation.querySelectorAll(".demo-section-nav__item").forEach(function (link) {
+            link.classList.remove("is-active");
+            link.removeAttribute("aria-current");
+          });
+
+          item.classList.add("is-active");
+          item.setAttribute("aria-current", "page");
+        });
+      }());
+    </script>
 
     <!-- Angebotsueberblick -->
     <section class="demo-offer">
