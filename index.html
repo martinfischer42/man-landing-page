@@ -92,6 +92,28 @@
     text-decoration: none !important;
   }
 
+  .demo-landing .demo-offer__facts .demo-offer__fact--unclear {
+    background: #e4002b !important;
+    border-left-color: #101214 !important;
+  }
+
+  .demo-landing .demo-offer__facts .demo-offer__fact--unclear strong,
+  .demo-landing .demo-offer__facts .demo-offer__fact--unclear span {
+    color: #ffffff !important;
+  }
+
+  .demo-landing .demo-faq-list {
+    margin: 0;
+    padding: 0 64px 26px 46px;
+    color: #58616b;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .demo-landing .demo-faq-list li + li {
+    margin-top: 6px;
+  }
+
   /*
    * Form button spans the full card width.
    */
@@ -111,6 +133,11 @@
 
     .demo-landing .demo-button--submit {
       width: 100% !important;
+    }
+
+    .demo-landing .demo-faq-list {
+      padding: 0 54px 22px 38px;
+      font-size: 15px;
     }
   }
 </style>
@@ -144,7 +171,10 @@
     <!-- Bereichsnavigation -->
     <nav class="demo-section-nav" aria-label="Direkt zu den Diensten">
       <div class="demo-section-nav__scroller">
-        <a class="demo-section-nav__item is-active" href="#perform" aria-current="page">
+        <a class="demo-section-nav__item is-active" href="#geo" aria-current="page">
+          Ortung &amp; Routenplanung
+        </a>
+        <a class="demo-section-nav__item" href="#perform">
           Einsatzdaten
         </a>
         <a class="demo-section-nav__item" href="#compliant-m">
@@ -153,11 +183,8 @@
         <a class="demo-section-nav__item" href="#timed">
           Lenk- &amp; Ruhezeiten
         </a>
-        <a class="demo-section-nav__item" href="#geo">
-          Ortung
-        </a>
         <a class="demo-section-nav__item" href="#servicecare">
-          Wartung
+          Wartungsmanagement
         </a>
         <a class="demo-section-nav__item" href="#simplepay">
           Kostenmanagement
@@ -195,20 +222,34 @@
             MAN Free Trial
           </p>
 
-          <h2>Mehr Transparenz für Ihre Flotte. Ohne Startkosten.</h2>
+          <h2>Fuhrparkmanagement kostenlos testen</h2>
 
           <p>
-            Testen Sie die Telematik- und Flottendienste von MAN drei Monate
-            kostenlos und erleben Sie, wie Fahrzeugdaten den Alltag im
-            Transportunternehmen vereinfachen: von Verbrauch und Wartung über
-            Lenkzeiten bis hin zu Standort, Compliance und Betriebskosten.
+            Testen Sie ausgewählte Telematik-Dienste für Ihr Flottenmanagement
+            drei Monate lang kostenlos. Erleben Sie, wie Fahrzeugdaten den
+            Alltag im Transportunternehmen vereinfachen sowie die Transparenz
+            und Effizienz erhöhen können.
           </p>
 
           <p>
-            Die Dienste werden über den MAN Marketplace auf der RIO Plattform
-            gebucht und genutzt. RIO ist dabei der digitale Zugangspunkt, über
-            den Sie MAN DigitalServices zentral aktivieren, verwalten und in
-            Ihren Fuhrpark integrieren.
+            Unsere MAN DigitalServices unterstützen Sie beispielsweise bei der
+            Routenplanung, der Reduzierung des Kraftstoffverbrauchs, dem Lenk-
+            und Ruhezeitenmanagement, der proaktiven Wartungsplanung sowie dem
+            Betriebskostenmanagement.
+          </p>
+
+          <p>
+            Die digitalen Dienste werden über den MAN Marketplace auf der RIO
+            Plattform gebucht. RIO ist Ihr digitaler Zugangspunkt, über den Sie
+            MAN DigitalServices zentral aktivieren, verwalten und Ihre
+            aufbereiteten Fahrzeugdaten einsehen können. Die dafür benötigten
+            Daten werden über die Telematik-Box im Fahrzeug bereitgestellt.
+          </p>
+
+          <p>
+            Das Testangebot gilt für Ihre gesamte MAN Diesel-Truck-Flotte*,
+            sofern Sie noch keine kostenpflichtigen MAN DigitalServices bezogen
+            haben oder von Digitalpaketen für MAN eTrucks profitieren.
           </p>
         </div>
 
@@ -223,7 +264,7 @@
             <span>nach 3 Monaten – ohne Kündigung</span>
           </div>
 
-          <div>
+          <div class="demo-offer__fact--unclear">
             <strong>Persönliche Begleitung</strong>
             <span>aktive Unterstützung während des Tests</span>
           </div>
@@ -238,13 +279,48 @@
           Enthaltene Dienste
         </p>
 
-        <h2>Diese MAN DigitalServices können Sie kennenlernen.</h2>
+        <h2>MAN DigitalServices kostenlos ausprobieren.</h2>
 
         <p>
           Die folgenden Dienste unterstützen Transportunternehmen dabei,
           Fuhrparkdaten besser zu nutzen, rechtliche Pflichten einfacher zu
           erfüllen und den täglichen Betrieb planbarer zu machen.
         </p>
+      </div>
+    </section>
+
+    <section id="geo" class="demo-feature demo-feature--dark demo-product-feature">
+      <div class="demo-container demo-feature__grid demo-feature__grid--reverse">
+        <div class="demo-feature__media">
+          <img
+            src="images/geo-header.svg"
+            alt="Geo Routenplanung und Fahrzeugpositionen"
+            loading="lazy"
+          >
+
+        </div>
+
+        <div class="demo-feature__content">
+          <p class="demo-eyebrow">
+            Ortung &amp; Routenplanung
+          </p>
+
+          <h2>Geo</h2>
+
+          <p>
+            Mit Geo sehen Sie nahezu in Echtzeit, wo sich Ihre Fahrzeuge
+            befinden, und können individuelle Geofences erstellen und
+            überwachen. Mithilfe der Fahrthistorie einschließlich der
+            Fahrereignisse lassen sich Routen analysieren und künftig
+            verbessern.
+          </p>
+
+          <ul class="demo-check-list demo-check-list--light">
+            <li>Live-Positionen und Fahrthistorie bis zu 25 Monate</li>
+            <li>POI, Geofences und automatische Ereignisbenachrichtigungen</li>
+            <li>Lkw-Routenplanung inklusive Verkehr und Mautbetrachtung</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -258,16 +334,17 @@
           <h2>Perform</h2>
 
           <p>
-            Perform identifiziert ineffiziente Fahrweisen und hilft dabei,
-            Kraftstoff- und Energieverbrauch zu reduzieren. Der Dienst wertet
-            Daten zum Fahrer- und Fahrzeugeinsatz aus und zeigt Potenziale für
-            eine wirtschaftliche und verschleißoptimierte Fahrweise. Ideal für
-            Fuhrparkverantwortliche, die die Leistung ihrer Fahrer gezielt
-            verbessern und den Verbrauch senken möchten.
+            Perform unterstützt Sie dabei, ineffiziente Fahrweisen zu
+            identifizieren und Kraftstoffverbrauch zu reduzieren. Der Dienst
+            wertet Daten zum Fahrer- und Fahrzeugeinsatz aus. Auf dieser Basis
+            lassen sich Maßnahmen und Fahrertrainings zur Förderung einer
+            wirtschaftlichen und verschleißoptimierten Fahrweise ableiten.
+            Ideal für Fuhrparkverantwortliche, die die Leistung ihrer Fahrer
+            gezielt verbessern und den Verbrauch senken möchten.
           </p>
 
           <ul class="demo-check-list">
-            <li>Analyse von Verbrauch, Standzeiten und CO2-Emissionen</li>
+            <li>Analyse von Verbrauch, Leerlaufzeiten und CO2-Emissionen</li>
             <li>Vergleichbare Bewertungen von Fahrer- und Fahrzeugeinsatz</li>
             <li>API-Option zur Integration in bestehende Systeme</li>
           </ul>
@@ -305,15 +382,15 @@
           <p>
             Compliant M sichert Tachographen- und Fahrerkartendaten automatisch
             per Fernauslesung. Das integrierte Analyseportal weist schnell auf
-            Verstöße gegen die Arbeitszeiten der Fahrer hin und schafft eine
-            fundierte Grundlage, um diese zu reduzieren. So verringern Sie den
-            manuellen Aufwand und stärken die Compliance.
+            Arbeitszeitverstöße der Fahrer hin und schafft eine fundierte
+            Grundlage, um diese zu reduzieren. So verringern Sie den manuellen
+            Aufwand und stärken die Compliance.
           </p>
 
           <ul class="demo-check-list demo-check-list--light">
-            <li>Automatischer Remote-Download von Tacho- und Kartendaten</li>
-            <li>Analyseportal für schnelle Erkennung von Verstößen</li>
-            <li>Optionales Unternehmenskarten-Hosting im Kartenhotel</li>
+            <li>Erhöhte Rechtssicherheit durch den automatisierten Prozess</li>
+            <li>Unternehmenskarten-Hosting im Kartenhotel</li>
+            <li>Geringerer Verwaltungsaufwand und Zeitersparnis</li>
           </ul>
         </div>
       </div>
@@ -336,9 +413,9 @@
           </p>
 
           <ul class="demo-check-list">
-            <li>Überblick über Lenk- und Ruhezeiten in Echtzeit</li>
-            <li>Tabellenansichten für Tag, Woche und Doppelwoche</li>
+            <li>Schneller Einblick in Lenk- und Ruhezeiten nahezu in Echtzeit</li>
             <li>Mehr Planbarkeit für Disposition und Tagesgeschäft</li>
+            <li>Unterstützung bei der Vermeidung teurer Lenkzeitverstöße</li>
           </ul>
         </div>
 
@@ -353,63 +430,29 @@
       </div>
     </section>
 
-    <section id="geo" class="demo-feature demo-feature--dark demo-product-feature">
-      <div class="demo-container demo-feature__grid demo-feature__grid--reverse">
-        <div class="demo-feature__media">
-          <img
-            src="images/geo-header.svg"
-            alt="Geo Routenplanung und Fahrzeugpositionen"
-            loading="lazy"
-          >
-
-        </div>
-
-        <div class="demo-feature__content">
-          <p class="demo-eyebrow">
-            Ortung & Routen
-          </p>
-
-          <h2>Geo</h2>
-
-          <p>
-            Mit Geo sehen Sie nahezu in Echtzeit, wo sich Ihre Fahrzeuge
-            befinden, und können individuelle Geofences erstellen und
-            überwachen. Mithilfe der Fahrthistorie einschließlich der
-            Fahrereignisse lassen sich Routen analysieren und künftig
-            verbessern.
-          </p>
-
-          <ul class="demo-check-list demo-check-list--light">
-            <li>Live-Positionen und Fahrthistorie bis zu 25 Monate</li>
-            <li>POI, Geofences und automatische Ereignisbenachrichtigungen</li>
-            <li>Lkw-Routenplanung inklusive Verkehr und Mautbetrachtung</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section id="servicecare" class="demo-feature demo-product-feature">
       <div class="demo-container demo-feature__grid">
         <div class="demo-feature__content">
           <p class="demo-eyebrow demo-eyebrow--dark">
-            Wartung
+            Wartungsmanagement
           </p>
 
           <h2>MAN ServiceCare M</h2>
 
           <p>
-            MAN ServiceCare verbindet Ihre Fahrzeuge mit der Werkstatt und
-            schafft Transparenz über Wartungsbedarfe und Verschleißdaten. Ihr
-            MAN Servicestützpunkt kann anstehende Arbeiten vorausschauend
-            bündeln und Werkstatttermine effizient koordinieren. Das hilft,
-            Werkstattbesuche zu reduzieren und die Fahrzeugverfügbarkeit zu
-            erhöhen.
+            MAN ServiceCare M unterstützt Sie dabei, Wartungen vorausschauend
+            zu planen und den technischen Zustand Ihrer Fahrzeuge im Blick zu
+            behalten. Der Dienst liefert detaillierte Informationen zu wichtigen
+            Fahrzeugkomponenten sowie zu Reifendrücken, Bremsbelägen und
+            Füllständen. So können Wartungsbedarfe frühzeitig erkannt,
+            Werkstattaufenthalte besser koordiniert und ungeplante Standzeiten
+            reduziert werden.
           </p>
 
           <ul class="demo-check-list">
-            <li>Detaillierter Überblick über Wartungszustand und Komponenten</li>
-            <li>Informationen zu Bremsbelägen, Füllständen und Reifendruck</li>
-            <li>Mehr Fahrzeugverfügbarkeit durch proaktive Werkstattplanung</li>
+            <li>Umfassender Überblick über den Wartungszustand Ihrer MAN Flotte</li>
+            <li>Detaillierte Informationen zu Komponenten, Bremsbelägen, Füllständen und Reifendruck</li>
+            <li>Mehr Fahrzeugverfügbarkeit durch proaktive Wartungsplanung</li>
           </ul>
         </div>
 
@@ -451,9 +494,9 @@
           </p>
 
           <ul class="demo-check-list demo-check-list--light">
-            <li>Transparente Betriebskosten pro Fahrzeug</li>
-            <li>Analyse von Einsparpotenzialen und möglichen Betrugsfällen</li>
-            <li>Kontaktlose Tank- und Parktransaktionen per MAN Driver App</li>
+            <li>Erhöhte Transparenz und reduzierter Aufwand dank zentraler Plattform</li>
+            <li>Verbesserte Kostenkontrolle sowie Identifikation möglicher Einsparpotenziale und Betrugsfälle</li>
+            <li>Kontaktlose Tank- und Parktransaktionen per MAN Driver App an ausgewählten Akzeptanzstellen</li>
           </ul>
         </div>
       </div>
@@ -465,10 +508,6 @@
         <div class="demo-faq__intro">
           <p class="demo-eyebrow demo-eyebrow--dark">Häufige Fragen</p>
           <h2 id="demo-faq-title">Das Wichtigste zum kostenlosen Test.</h2>
-          <p>
-            Hier finden Sie Antworten zu Kosten, Laufzeit, Fahrzeugen und der
-            weiteren Nutzung der MAN DigitalServices.
-          </p>
           <a class="demo-text-link" href="free-trial-anleitung.html">
             Zur Schritt-für-Schritt-Anleitung
           </a>
@@ -478,8 +517,22 @@
           <details open>
             <summary>Was kostet das Testangebot?</summary>
             <p>
-              Das Testangebot ist drei Monate kostenlos. Es entstehen keine
-              Startkosten und keine versteckten Kosten.
+              Das 3-monatige Testangebot ist kostenlos und unverbindlich. Es
+              entstehen keine versteckten Kosten.
+            </p>
+          </details>
+
+          <details>
+            <summary>Für wen ist das Testangebot?</summary>
+            <p>
+              Das Testangebot richtet sich an Kunden mit MAN Diesel-Lkw, die
+              bislang keine kostenpflichtigen MAN DigitalServices bezogen haben
+              oder von Digitalpaketen für MAN eTrucks profitieren. Es steht
+              Unternehmen in den Ländern zur Verfügung, in denen MAN
+              DigitalServices angeboten werden. MAN DigitalServices sind aktuell
+              in den EU-Staaten (ausgenommen Kanarische Inseln und Malta) sowie
+              in Norwegen, in der Schweiz und im Vereinigten Königreich
+              verfügbar. Überseegebiete sind ausgenommen.
             </p>
           </details>
 
@@ -494,26 +547,50 @@
           <details>
             <summary>Was passiert nach Ablauf der drei Monate?</summary>
             <p>
-              Es erfolgt keine automatische kostenpflichtige Verlängerung.
-              Wenn Sie einen Dienst weiter nutzen möchten, können Sie ihn
-              anschließend kostenpflichtig buchen.
+              Es erfolgt keine automatische kostenpflichtige Verlängerung. Wenn
+              Sie einen Dienst weiter nutzen möchten, können Sie ihn anschließend
+              kostenpflichtig buchen. Über die Möglichkeiten zur weiteren
+              Nutzung und Buchung informieren wir Sie rechtzeitig vor Ende des
+              Testzeitraums.
             </p>
+          </details>
+
+          <details>
+            <summary>Wie kann ich das Testangebot aktivieren?</summary>
+            <p>
+              Das Testangebot können Sie bequem online in Ihrem RIO Account
+              aktivieren. Melden Sie sich in Ihrem RIO-Account an und klicken
+              Sie auf den großen Banner zum Free Trial. Es sind nur wenige
+              Schritte bis zum Start.
+            </p>
+          </details>
+
+          <details>
+            <summary>Was benötige ich für die Aktivierung des Testangebots?</summary>
+            <ul class="demo-faq-list">
+              <li>Zugangsdaten zu Ihrem RIO Account</li>
+              <li>Fahrzeugidentifikationsnummer (FIN) der teilnehmenden Fahrzeuge, falls sie noch nicht in Ihrem RIO Account hinterlegt sind</li>
+              <li>Falls Sie den Dienst Compliant M testen möchten: Unternehmerkarte für den Zugriff auf Tachographendaten, die Sie beim Kartenhotel einreichen können</li>
+              <li>Falls Sie den Dienst MAN SimplePay testen möchten: Tankkarten von DKV Mobility und UTA Edenred</li>
+            </ul>
           </details>
 
           <details>
             <summary>Welche Fahrzeuge werden unterstützt?</summary>
             <p>
-              Das Angebot richtet sich an MAN Diesel-Lkw mit geeigneter
-              Telematik-Box. Ob ein Fahrzeug teilnehmen kann, hängt von der
-              technischen Verfügbarkeit des jeweiligen Dienstes ab.
+              Das Testangebot gilt für MAN Diesel-Lkw mit geeigneter
+              Telematik-Box. Die Verfügbarkeit und der Leistungsumfang einzelner
+              Dienste sind abhängig von den technischen Voraussetzungen des
+              jeweiligen Fahrzeugs. Die Verfügbarkeit wird je Fahrzeug bei der
+              Aktivierung des Testangebots online geprüft.
             </p>
           </details>
 
           <details>
             <summary>Kann ich mehrere Fahrzeuge testen?</summary>
             <p>
-              Sie können das Testangebot für mehrere technisch geeignete
-              Fahrzeuge aktivieren. Die Verfügbarkeit wird je Fahrzeug geprüft.
+              Ja, Sie können das Testangebot für Ihre gesamte MAN
+              Diesel-Lkw-Flotte in Anspruch nehmen.
             </p>
           </details>
 
@@ -531,7 +608,9 @@
             <p>
               Fahrzeug- und Unternehmensdaten werden über die cloudbasierte
               RIO Plattform verarbeitet. Maßgeblich sind die jeweils geltenden
-              Datenschutz- und Sicherheitsbestimmungen von RIO und MAN.
+              Datenschutz- und Sicherheitsbestimmungen von RIO und MAN. Dabei
+              werden geeignete technische und organisatorische Maßnahmen zum
+              Schutz Ihrer Daten angewendet.
             </p>
           </details>
 
@@ -539,7 +618,8 @@
             <summary>Kann ich die Dienste nach dem Test weiter nutzen?</summary>
             <p>
               Ja. Nach dem automatischen Testende können Sie die gewünschten
-              Dienste bei Bedarf regulär kostenpflichtig buchen.
+              Dienste bei Bedarf regulär kostenpflichtig buchen und weiter
+              nutzen.
             </p>
           </details>
         </div>
@@ -559,7 +639,7 @@
 
           <p>
             Sie haben Fragen oder Probleme bei der Aktivierung oder Nutzung
-            Ihres Free Trials? Unser Support hilft Ihnen gerne weiter.
+            Ihres Testangebots? Unser Support hilft Ihnen gerne weiter.
           </p>
 
           <a
