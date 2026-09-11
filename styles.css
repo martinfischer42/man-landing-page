@@ -573,6 +573,12 @@ footer[role="contentinfo"]:not(.demo-footer) {
   background: var(--demo-panel);
 }
 
+.demo-products-intro + .demo-feature--dark.demo-product-feature {
+  background:
+    linear-gradient(180deg, #171a1e 0%, #111315 100%);
+  color: var(--demo-white);
+}
+
 .demo-product-feature + .demo-product-feature {
   border-top: 1px solid rgba(16, 18, 20, 0.08);
 }
