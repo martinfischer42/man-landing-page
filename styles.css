@@ -776,6 +776,27 @@ footer[role="contentinfo"]:not(.demo-footer) {
   text-align: center;
 }
 
+.demo-feature-callout {
+  position: absolute;
+  right: max(28px, calc((100vw - var(--demo-max-width)) / 2));
+  bottom: clamp(34px, 5vw, 70px);
+  z-index: 2;
+  display: flex;
+  width: clamp(148px, 13vw, 184px);
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 50%;
+  background: var(--demo-red);
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.26);
+  color: var(--demo-white);
+  font-size: clamp(15px, 1.2vw, 18px);
+  font-weight: 900;
+  line-height: 1.18;
+  text-align: center;
+}
+
 .demo-arrow-link {
   color: var(--demo-ink);
 }
@@ -977,6 +998,11 @@ footer[role="contentinfo"]:not(.demo-footer) {
   .demo-feature__media img {
     height: auto;
     max-height: 460px;
+  }
+
+  .demo-feature-callout {
+    position: static;
+    margin: 32px auto 0;
   }
 
 }
