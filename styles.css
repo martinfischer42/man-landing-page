@@ -777,15 +777,12 @@ footer[role="contentinfo"]:not(.demo-footer) {
 }
 
 .demo-feature-callout {
-  position: absolute;
-  right: max(28px, calc((100vw - var(--demo-max-width)) / 2));
-  bottom: clamp(34px, 5vw, 70px);
-  z-index: 2;
   display: flex;
-  width: clamp(148px, 13vw, 184px);
+  width: clamp(142px, 12vw, 174px);
   aspect-ratio: 1;
   align-items: center;
   justify-content: center;
+  margin: 28px 0 0 auto;
   padding: 24px;
   border-radius: 50%;
   background: var(--demo-red);
@@ -998,11 +995,6 @@ footer[role="contentinfo"]:not(.demo-footer) {
   .demo-feature__media img {
     height: auto;
     max-height: 460px;
-  }
-
-  .demo-feature-callout {
-    position: static;
-    margin: 32px auto 0;
   }
 
 }
