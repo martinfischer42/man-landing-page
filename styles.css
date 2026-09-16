@@ -538,6 +538,53 @@ footer[role="contentinfo"]:not(.demo-footer) {
 }
 
 /* =========================================================
+   Aktivierungs-Hinweis
+   ========================================================= */
+
+.demo-guide-cta {
+  position: relative;
+  padding: 44px 0;
+  background:
+    linear-gradient(135deg, #171a1e 0%, #101214 100%);
+  color: var(--demo-white);
+}
+
+.demo-guide-cta::before {
+  position: absolute;
+  top: 0;
+  left: max(24px, calc((100vw - var(--demo-max-width)) / 2));
+  width: 74px;
+  height: 6px;
+  background: var(--demo-red);
+  content: "";
+}
+
+.demo-guide-cta__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.demo-guide-cta .demo-eyebrow {
+  margin-bottom: 14px;
+}
+
+.demo-guide-cta h2 {
+  max-width: 850px;
+  margin: 0;
+  color: var(--demo-white);
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+
+.demo-guide-cta__button {
+  white-space: nowrap;
+}
+
+/* =========================================================
    Free-Trial-Produkte
    ========================================================= */
 
@@ -911,6 +958,10 @@ footer[role="contentinfo"]:not(.demo-footer) {
     min-height: 132px;
   }
 
+  .demo-guide-cta__inner {
+    grid-template-columns: 1fr;
+  }
+
   .demo-products-intro {
     padding: 72px 0 24px;
   }
@@ -1021,6 +1072,18 @@ footer[role="contentinfo"]:not(.demo-footer) {
 
   .demo-offer__facts div {
     min-height: 0;
+  }
+
+  .demo-guide-cta {
+    padding: 38px 0;
+  }
+
+  .demo-guide-cta__inner {
+    gap: 24px;
+  }
+
+  .demo-guide-cta__button {
+    width: 100% !important;
   }
 
   .demo-products-intro {
