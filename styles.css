@@ -501,6 +501,13 @@ footer[role="contentinfo"]:not(.demo-footer) {
   line-height: 1.66;
 }
 
+.demo-offer .demo-offer__note {
+  margin-top: 22px;
+  color: #747c86;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .demo-offer p:last-child {
   margin-bottom: 0;
 }
