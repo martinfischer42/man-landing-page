@@ -727,6 +727,15 @@ footer[role="contentinfo"]:not(.demo-footer) {
   transform: scaleX(-1) scale(1.025);
 }
 
+/* Fertig perspektivierte Produktmotive dürfen nicht gespiegelt werden. */
+.demo-feature__grid--reverse .demo-feature__media--native-direction img {
+  transform: none;
+}
+
+.demo-feature__grid--reverse .demo-feature__media--native-direction:hover img {
+  transform: scale(1.025);
+}
+
 .demo-feature__media--icon {
   display: flex;
   align-items: center;
