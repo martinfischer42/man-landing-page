@@ -89,7 +89,8 @@ footer[role="contentinfo"]:not(.demo-footer) {
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
   background: var(--demo-white);
   color: var(--demo-ink);
   font-family: Arial, Helvetica, sans-serif;
@@ -128,7 +129,7 @@ footer[role="contentinfo"]:not(.demo-footer) {
 }
 
 .demo-landing section[id] {
-  scroll-margin-top: 24px;
+  scroll-margin-top: 76px;
 }
 
 /* =========================================================
@@ -136,8 +137,9 @@ footer[role="contentinfo"]:not(.demo-footer) {
    ========================================================= */
 
 .demo-section-nav {
-  position: relative;
-  z-index: 4;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   overflow: hidden;
   padding: 0;
   background: var(--demo-white);
@@ -1020,6 +1022,10 @@ footer[role="contentinfo"]:not(.demo-footer) {
 @media (max-width: 700px) {
   .demo-container {
     width: calc(100% - 32px);
+  }
+
+  .demo-landing section[id] {
+    scroll-margin-top: 64px;
   }
 
   .demo-section-nav__scroller {
