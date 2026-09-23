@@ -503,10 +503,10 @@ footer[role="contentinfo"]:not(.demo-footer) {
   line-height: 1.66;
 }
 
-.demo-offer .demo-offer__note {
+.demo-offer p.demo-offer__note {
   margin-top: 22px;
   color: #747c86;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -1463,6 +1463,10 @@ footer[role="contentinfo"]:not(.demo-footer) {
 
 .demo-guide-step li + li {
   margin-top: 9px;
+}
+
+.demo-guide-platform-button {
+  margin-top: 28px !important;
 }
 
 .demo-guide-note {
