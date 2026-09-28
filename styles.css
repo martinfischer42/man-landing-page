@@ -281,6 +281,11 @@ footer[role="contentinfo"]:not(.demo-footer) {
 }
 
 .demo-text-link,
+.demo-feature-callout--compact {
+  font-size: clamp(12px, 0.95vw, 14px);
+  line-height: 1.15;
+}
+
 .demo-arrow-link {
   display: inline-flex;
   align-items: center;
