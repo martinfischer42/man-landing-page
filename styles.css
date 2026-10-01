@@ -36,8 +36,9 @@ body {
   padding: 0 !important;
 }
 
-body > header,
+header,
 body > nav,
+nav:not(.demo-section-nav),
 body > .navbar,
 header[role="banner"],
 header.navbar,
